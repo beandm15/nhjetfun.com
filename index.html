@@ -143,6 +143,15 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-links a:hover{color:var(--wave);}
 .nav-cta{background:var(--sky)!important;color:var(--white)!important;padding:.42rem 1.05rem;border-radius:4px;}
 .nav-cta:hover{background:var(--wave)!important;color:var(--navy)!important;}
+.nav-brand{display:flex;flex-direction:column;}
+.nav-mobile-actions{display:none;align-items:center;gap:.7rem;}
+.nav-cta-mobile{display:none;}
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:10px;background:none;border:none;cursor:pointer;}
+.nav-toggle span{display:block;height:2px;width:100%;background:var(--white);border-radius:2px;transition:transform .25s,opacity .25s;}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-toggle.open span:nth-child(2){opacity:0;}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+section{scroll-margin-top:80px;}
 #hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;}
 .hero-bg{position:absolute;inset:0;z-index:0;background-image:url("/hero-both-seadoos.jpg");background-size:cover;background-position:center 40%;}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(10,22,40,.91) 0%,rgba(10,22,40,.72) 55%,rgba(10,22,40,.3) 100%);}
@@ -319,11 +328,32 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   .fleet-grid,.about-inner,.contact-inner,.booking-inner,.delivery-inner,.lifestyle-inner,.pricing-grid,.lakes-inner{grid-template-columns:1fr;gap:1.8rem;}
   .steps{grid-template-columns:1fr 1fr;}.steps::before{display:none;}
   .price-card.featured{transform:none;}.faq-grid{grid-template-columns:1fr;}
-  .hero-stats{position:static;margin-top:2.5rem;}.nav-links{display:none;}
+  .hero-stats{position:static;margin-top:2.5rem;}
+  .nav-toggle{display:flex;}
+  .nav-mobile-actions{display:flex;}
+  .nav-cta-mobile{display:inline-block;}
+  .nav-links{position:fixed;top:68px;left:0;right:0;flex-direction:column;gap:0;background:rgba(10,22,40,.98);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07);max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .nav-links.open{max-height:calc(100vh - 68px);overflow-y:auto;}
+  .nav-links li{width:100%;}
+  .nav-links a{display:block;padding:1rem 8%;font-size:.95rem;border-bottom:1px solid rgba(255,255,255,.06);}
+  .nav-links .nav-cta{margin:.9rem 8%;padding:.85rem 1.05rem;text-align:center;border-bottom:none;}
   section{padding:3rem 5%;}
   .form-row{grid-template-columns:1fr;}
+  .form-input,.form-select,.form-textarea{font-size:16px;}
   footer{flex-direction:column;gap:1.2rem;text-align:center;}
   .gallery-strip{grid-template-columns:1fr 1fr;}.gallery-strip img{height:170px;}
+}
+@media(max-width:480px){
+  section{padding:2.5rem 6%;}
+  .hero-content{padding:0 6%;}
+  .hero-title{font-size:clamp(2.6rem,12vw,3.5rem);}
+  .hero-stats{gap:1.4rem;}
+  .stat-num{font-size:1.9rem;}
+  .hero-actions{flex-direction:column;align-items:stretch;}
+  .btn-primary,.btn-ghost{justify-content:center;text-align:center;}
+  .ski-specs{grid-template-columns:1fr;}
+  #certificates{padding:3.5rem 6%;}
+  .footer-links{flex-wrap:wrap;justify-content:center;gap:1rem;}
 }
 
     /* Hide Booqable quantity selector */
@@ -361,15 +391,21 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
 </head>
 <body>
 <nav>
-  <div>
+  <div class="nav-brand">
     <a href="#" class="nav-logo">NH <span>Jet</span> Fun</a>
     <div class="nav-sub">Jet Ski Rentals · nhjetfun.com</div>
   </div>
-  <ul class="nav-links">
+  <ul class="nav-links" id="navLinks">
     <li><a href="#fleet">Fleet</a></li><li><a href="#how">How It Works</a></li><li><a href="#lakes">Lakes Served</a></li>
     <li><a href="#pricing">Pricing</a></li><li><a href="#certificates">Get Certified</a></li><li><a href="#guides">Guides</a></li><li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li><li><a href="https://bookings.nhjetfun.com" target="_blank" class="nav-cta">Book Now</a></li>
   </ul>
+  <div class="nav-mobile-actions">
+    <a href="https://bookings.nhjetfun.com" target="_blank" class="nav-cta nav-cta-mobile">Book</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <section id="hero">
@@ -869,6 +905,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+</script>
+<script>
+(function(){
+  var toggle=document.getElementById('navToggle');
+  var links=document.getElementById('navLinks');
+  if(!toggle||!links)return;
+  function close(){links.classList.remove('open');toggle.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');}
+  toggle.addEventListener('click',function(){
+    var open=links.classList.toggle('open');
+    toggle.classList.toggle('open',open);
+    toggle.setAttribute('aria-expanded',open?'true':'false');
+    toggle.setAttribute('aria-label',open?'Close menu':'Open menu');
+  });
+  Array.prototype.forEach.call(links.querySelectorAll('a'),function(a){a.addEventListener('click',close);});
+})();
 </script>
 <!-- Booqable widget removed: requires Grow plan. Booking via bookings.nhjetfun.com -->
 </body>
