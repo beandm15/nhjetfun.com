@@ -1,0 +1,51 @@
+<svg viewBox="0 0 500 660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of New Hampshire showing NH Jet Fun delivery area from the Massachusetts border north to Squam Lake, with major highways (I-93, I-89, I-95, US-4, NH-101, NH-16) and lake outlines for Winnipesaukee, Squam, Winnisquam and Newfound.">
+<rect x="0" y="0" width="500" height="660" fill="#ffffff"/>
+<polygon points="362,12 374,130 386,249 405,367 424,486 450,538 426,588 321,628 95,628 33,621 48,486 71,367 107,249 167,130 250,59" fill="#eef3f8" stroke="#0a1628" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="71,367 48,486 33,621 95,628 321,628 426,588 450,538 424,486 405,367" fill="#4db6e8" fill-opacity="0.28" stroke="#2d7dd2" stroke-width="1.4" stroke-linejoin="round"/>
+<polyline points="329,607 271,559 252,507 240,453 217,377" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="252,507 83,405" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="424,581 438,540" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="329,607 271,559 252,507 240,453 217,377" fill="none" stroke="#5b6b7d" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="252,507 83,405" fill="none" stroke="#5b6b7d" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="424,581 438,540" fill="none" stroke="#5b6b7d" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="252,507 398,526 438,540" fill="none" stroke="#8392a3" stroke-width="1.7" stroke-dasharray="0.1 0" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="76,574 271,559 419,571" fill="none" stroke="#8392a3" stroke-width="1.7" stroke-dasharray="0.1 0" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="438,540 386,486 372,440" fill="none" stroke="#8392a3" stroke-width="1.7" stroke-dasharray="0.1 0" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="288,405 298,398 312,400 322,394 334,402 340,412 332,421 322,418 314,426 304,422 296,429 290,420 286,412" fill="#8fcdee" stroke="#2b7cb8" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="240,360 248,356 256,358 262,363 258,370 250,372 243,368" fill="#8fcdee" stroke="#2b7cb8" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="251,441 256,433 263,425 268,422 270,426 264,434 258,442 253,445" fill="#8fcdee" stroke="#2b7cb8" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="188,392 196,389 202,394 203,403 200,413 193,416 187,410 185,400" fill="#8fcdee" stroke="#2b7cb8" stroke-width="1.3" stroke-linejoin="round"/>
+<line x1="71" y1="367" x2="405" y2="367" stroke="#e85f2d" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="409" y="364" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="11" font-weight="700" fill="#e85f2d">Squam Lake</text>
+<text x="409" y="378" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="9.5" fill="#e85f2d">service edge</text>
+<text text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="12.5" fill="#5a7090"><tspan x="232" y="190">We do not service</tspan><tspan x="232" y="208">lakes north of</tspan><tspan x="232" y="226">Squam Lake</tspan></text>
+<text x="258" y="105" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="14" letter-spacing="3" font-weight="700" fill="#9fb2c9">NEW HAMPSHIRE</text>
+<text x="20" y="338" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="11" fill="#9fb2c9">VT</text>
+<text x="468" y="300" text-anchor="end" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="11" fill="#9fb2c9">ME</text>
+<text x="200" y="650" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="11" fill="#9fb2c9">MASSACHUSETTS</text>
+<text x="455" y="610" text-anchor="end" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="9.5" font-style="italic" fill="#9fb2c9">Atlantic</text>
+<g transform="translate(48,48)"><path d="M0,-15 L6,6 L0,1 L-6,6 Z" fill="#0a1628"/><text x="0" y="21" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#0a1628">N</text></g>
+<g><rect x="234.0" y="478" width="18" height="16" rx="3.5" fill="#ffffff" stroke="#5b6b7d" stroke-width="1.4"/><text x="243" y="490" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#5b6b7d">93</text></g>
+<g><rect x="141.0" y="444" width="18" height="16" rx="3.5" fill="#ffffff" stroke="#5b6b7d" stroke-width="1.4"/><text x="150" y="456" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#5b6b7d">89</text></g>
+<g><rect x="438.0" y="548" width="18" height="16" rx="3.5" fill="#ffffff" stroke="#5b6b7d" stroke-width="1.4"/><text x="447" y="560" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#5b6b7d">95</text></g>
+<g><rect x="345.5" y="508" width="13" height="16" rx="3.5" fill="#ffffff" stroke="#8392a3" stroke-width="1.4"/><text x="352" y="520" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#8392a3">4</text></g>
+<g><rect x="138.5" y="558" width="23" height="16" rx="3.5" fill="#ffffff" stroke="#8392a3" stroke-width="1.4"/><text x="150" y="570" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#8392a3">101</text></g>
+<g><rect x="389.0" y="490" width="18" height="16" rx="3.5" fill="#ffffff" stroke="#8392a3" stroke-width="1.4"/><text x="398" y="502" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#8392a3">16</text></g>
+<g><title>Squam Lake</title><circle cx="250" cy="367" r="9.5" fill="#e8a020" stroke="#fff" stroke-width="1.6"/><text x="250" y="370.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">1</text></g>
+<g><title>Newfound Lake</title><circle cx="193" cy="401" r="8.5" fill="#2d7dd2" stroke="#fff" stroke-width="1.6"/><text x="193" y="404.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">2</text></g>
+<g><title>Lake Winnipesaukee</title><circle cx="305" cy="410" r="8.5" fill="#2d7dd2" stroke="#fff" stroke-width="1.6"/><text x="305" y="413.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">3</text></g>
+<g><title>Winnisquam Lake</title><circle cx="258" cy="428" r="8.5" fill="#2d7dd2" stroke="#fff" stroke-width="1.6"/><text x="258" y="431.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">4</text></g>
+<g><title>Northwood Lake</title><circle cx="340" cy="505" r="8.5" fill="#2d7dd2" stroke="#fff" stroke-width="1.6"/><text x="340" y="508.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">5</text></g>
+<g><title>Pleasant Lake</title><circle cx="315" cy="520" r="8.5" fill="#2d7dd2" stroke="#fff" stroke-width="1.6"/><text x="315" y="523.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">6</text></g>
+<g><title>Angle Pond</title><circle cx="360" cy="545" r="8.5" fill="#2d7dd2" stroke="#fff" stroke-width="1.6"/><text x="360" y="548.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">7</text></g>
+<g><title>Arlington Mill Reservoir</title><circle cx="388" cy="560" r="8.5" fill="#2d7dd2" stroke="#fff" stroke-width="1.6"/><text x="388" y="563.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">8</text></g>
+<g><title>Big Island Pond</title><circle cx="345" cy="575" r="8.5" fill="#2d7dd2" stroke="#fff" stroke-width="1.6"/><text x="345" y="578.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">9</text></g>
+<g><title>Canobie Lake</title><circle cx="315" cy="588" r="8.5" fill="#2d7dd2" stroke="#fff" stroke-width="1.6"/><text x="315" y="591.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">10</text></g>
+<g><title>Cobbetts Pond</title><circle cx="352" cy="603" r="8.5" fill="#2d7dd2" stroke="#fff" stroke-width="1.6"/><text x="352" y="606.6" text-anchor="middle" font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" font-weight="700" fill="#fff">11</text></g>
+<g font-family="'Segoe UI',Arial,Helvetica,sans-serif" font-size="10" fill="#5a7090">
+<rect x="8" y="120" width="132" height="74" rx="6" fill="#ffffff" stroke="#dde5ee" stroke-width="1"/>
+<rect x="18" y="132" width="16" height="11" fill="#4db6e8" fill-opacity="0.4" stroke="#2d7dd2" stroke-width="1"/><text x="40" y="141">Service area</text>
+<line x1="18" y1="156" x2="34" y2="156" stroke="#e85f2d" stroke-width="2.4" stroke-dasharray="5 3"/><text x="40" y="160">Boundary (Squam)</text>
+<line x1="18" y1="174" x2="34" y2="174" stroke="#5b6b7d" stroke-width="2.4"/><text x="40" y="178">Major highway</text>
+</g>
+</svg>

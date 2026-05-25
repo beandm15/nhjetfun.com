@@ -11,7 +11,57 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NH Jet Fun — Jet Ski Rentals | nhjetfun.com</title>
+<title>NH Jet Fun | Sea-Doo Jet Ski Rentals on New Hampshire Lakes</title>
+<meta name="description" content="Rent like-new Sea-Doo jet skis on New Hampshire lakes — Winnipesaukee, Squam, Newfound, Winnisquam & more. Lake delivery and easy online booking today.">
+<meta name="keywords" content="jet ski rental NH, Sea-Doo rental New Hampshire, jet ski rental Lake Winnipesaukee, Squam Lake jet ski rental, Newfound Lake jet ski rental, Winnisquam Lake jet ski, Northwood Lake jet ski, Pleasant Lake jet ski, Cobbetts Pond jet ski, Canobie Lake jet ski, Angle Pond jet ski, Big Island Pond jet ski, Arlington Mill Reservoir jet ski, Country Pond jet ski, Great Pond Kingston jet ski, Pawtuckaway Lake jet ski, NH watercraft rental">
+<meta name="author" content="NH Jet Fun">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://nhjetfun.com/">
+<!-- Geo -->
+<meta name="geo.region" content="US-NH">
+<meta name="geo.placename" content="New Hampshire">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NH Jet Fun">
+<meta property="og:title" content="NH Jet Fun | Sea-Doo Jet Ski Rentals on New Hampshire Lakes">
+<meta property="og:description" content="Rent like-new Sea-Doo jet skis on New Hampshire lakes — Winnipesaukee, Squam, Newfound, Winnisquam & more. Lake delivery and easy online booking.">
+<meta property="og:url" content="https://nhjetfun.com/">
+<meta property="og:image" content="https://nhjetfun.com/hero-both-seadoos.jpg">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NH Jet Fun | Sea-Doo Jet Ski Rentals on New Hampshire Lakes">
+<meta name="twitter:description" content="Rent like-new Sea-Doo jet skis on New Hampshire lakes — Winnipesaukee, Squam, Newfound & more. Lake delivery and easy online booking.">
+<meta name="twitter:image" content="https://nhjetfun.com/hero-both-seadoos.jpg">
+<!-- Structured data: service area (all major NH lakes served) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "NH Jet Fun",
+  "description": "Sea-Doo jet ski rentals delivered to major lakes across central and southern New Hampshire.",
+  "url": "https://nhjetfun.com/",
+  "image": "https://nhjetfun.com/hero-both-seadoos.jpg",
+  "email": "bookings@nhjetfun.com",
+  "priceRange": "$1,250–$1,950 per week",
+  "address": { "@type": "PostalAddress", "addressLocality": "Hampstead", "addressRegion": "NH", "addressCountry": "US" },
+  "areaServed": [
+    { "@type": "Place", "name": "Lake Winnipesaukee" },
+    { "@type": "Place", "name": "Squam Lake" },
+    { "@type": "Place", "name": "Newfound Lake" },
+    { "@type": "Place", "name": "Winnisquam Lake" },
+    { "@type": "Place", "name": "Northwood Lake" },
+    { "@type": "Place", "name": "Pleasant Lake" },
+    { "@type": "Place", "name": "Cobbetts Pond" },
+    { "@type": "Place", "name": "Canobie Lake" },
+    { "@type": "Place", "name": "Angle Pond" },
+    { "@type": "Place", "name": "Big Island Pond" },
+    { "@type": "Place", "name": "Arlington Mill Reservoir" },
+    { "@type": "Place", "name": "Country Pond" },
+    { "@type": "Place", "name": "Great Pond, Kingston" },
+    { "@type": "Place", "name": "Pawtuckaway Lake" }
+  ]
+}
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#0a1628;--deep:#0d2244;--ocean:#1a4a7a;--sky:#2d7dd2;--wave:#4db6e8;--foam:#e8f4fd;--sand:#f5ede0;--gold:#e8a020;--coral:#e85f2d;--white:#ffffff;--off:#f8fafc;--text:#1a2535;--muted:#5a7090;}
@@ -182,8 +232,25 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
 .footer-links a{font-size:.77rem;color:var(--text);text-decoration:none;transition:color .2s;}
 .footer-links a:hover{color:var(--sky);}
 .footer-copy{font-size:.71rem;color:var(--muted);}
+#lakes{background:var(--foam);}
+.lakes-inner{display:grid;grid-template-columns:1.05fr 1fr;gap:3.5rem;align-items:center;max-width:1100px;margin:2.4rem auto 0;}
+.lakes-map{background:var(--white);border-radius:16px;padding:1.4rem 1.4rem 1rem;box-shadow:0 12px 50px rgba(10,22,40,.12);}
+.lakes-map img{width:100%;max-width:380px;height:auto;display:block;margin:0 auto;}
+.lakes-mapnote{font-size:.69rem;color:var(--muted);text-align:center;margin-top:.7rem;font-style:italic;}
+.lakes-legend-group{margin-bottom:1.35rem;}
+.lakes-legend-group h3{font-family:"DM Sans",sans-serif;font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--sky);margin-bottom:.7rem;}
+.lakes-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:.55rem 1rem;}
+.lakes-list li{display:flex;align-items:center;gap:.6rem;font-size:.92rem;color:var(--text);}
+.lake-num{flex-shrink:0;width:22px;height:22px;border-radius:50%;background:var(--sky);color:var(--white);font-size:.71rem;font-weight:700;display:flex;align-items:center;justify-content:center;}
+.lake-num.boundary{background:var(--gold);}
+.lakes-boundary-note{display:flex;gap:.8rem;align-items:flex-start;background:var(--white);border-left:4px solid var(--coral);border-radius:8px;padding:1rem 1.1rem;margin-top:1.5rem;}
+.lakes-boundary-note .bn-icon{font-size:1.1rem;line-height:1.3;}
+.lakes-boundary-note strong{color:var(--navy);}
+.lakes-boundary-note p{font-size:.86rem;color:var(--muted);line-height:1.55;margin:0;}
+.lakes-more{font-size:.84rem;color:var(--muted);line-height:1.6;margin-top:1.2rem;}
+.lakes-more strong{color:var(--navy);}
 @media(max-width:900px){
-  .fleet-grid,.about-inner,.contact-inner,.booking-inner,.delivery-inner,.lifestyle-inner,.pricing-grid{grid-template-columns:1fr;gap:1.8rem;}
+  .fleet-grid,.about-inner,.contact-inner,.booking-inner,.delivery-inner,.lifestyle-inner,.pricing-grid,.lakes-inner{grid-template-columns:1fr;gap:1.8rem;}
   .steps{grid-template-columns:1fr 1fr;}.steps::before{display:none;}
   .price-card.featured{transform:none;}.faq-grid{grid-template-columns:1fr;}
   .hero-stats{position:static;margin-top:2.5rem;}.nav-links{display:none;}
@@ -233,7 +300,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
     <div class="nav-sub">Jet Ski Rentals · nhjetfun.com</div>
   </div>
   <ul class="nav-links">
-    <li><a href="#fleet">Fleet</a></li><li><a href="#how">How It Works</a></li>
+    <li><a href="#fleet">Fleet</a></li><li><a href="#how">How It Works</a></li><li><a href="#lakes">Lakes Served</a></li>
     <li><a href="#pricing">Pricing</a></li><li><a href="#certificates">Get Certified</a></li><li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li><li><a href="/rental-agreement.html" target="_blank">Rental Agreement</a></li><li><a href="https://bookings.nhjetfun.com" target="_blank" class="nav-cta">Book Now</a></li>
   </ul>
@@ -351,8 +418,55 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
         <div class="dpoint"><div class="dpoint-icon">&#128666;</div><div><div class="dpoint-title">Delivered to Your Door or Dock</div><div class="dpoint-text">Give us any NH address &mdash; lakehouse, campground, marina &mdash; and we&apos;ll have it there by Saturday 5:00 PM.</div></div></div>
         <div class="dpoint"><div class="dpoint-icon">&#9889;</div><div><div class="dpoint-title">Early Delivery Available</div><div class="dpoint-text">Available earlier on Saturday? We&apos;ll do our best to deliver ahead of schedule when coordinated in advance.</div></div></div>
         <div class="dpoint"><div class="dpoint-icon">&#128737;</div><div><div class="dpoint-title">Safety Walkthrough Included</div><div class="dpoint-text">We walk every renter through controls, kill switch, PFDs, and local water rules before handing over the keys.</div></div></div>
-        <div class="dpoint"><div class="dpoint-icon">&#128205;</div><div><div class="dpoint-title">All of New Hampshire</div><div class="dpoint-text">Winnipesaukee, Squam, Sunapee, Newfound &mdash; if it&apos;s in NH, we&apos;ll get there.</div></div></div>
+        <div class="dpoint"><div class="dpoint-icon">&#128205;</div><div><div class="dpoint-title">Central &amp; Southern NH</div><div class="dpoint-text">From the Massachusetts line north to Squam Lake &mdash; Winnipesaukee, Winnisquam, Newfound, Squam and our southern NH ponds. See our <a href="#lakes" style="color:var(--sky);">full list of lakes served</a>.</div></div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="lakes">
+  <div style="text-align:center;max-width:680px;margin:0 auto;">
+    <div class="section-tag" style="justify-content:center;">Where We Ride</div>
+    <h2 class="section-title">Lakes &amp; Ponds We Serve</h2>
+    <p class="section-lead" style="margin:0 auto;">We deliver Sea-Doos across central and southern New Hampshire &mdash; from the Massachusetts state line north to Squam Lake. Below are all 11 lakes and ponds we currently serve.</p>
+  </div>
+  <div class="lakes-inner">
+    <div class="lakes-map">
+<img src="/nh-service-map.svg" alt="Map of New Hampshire showing NH Jet Fun's delivery area from the Massachusetts border north to Squam Lake, with major highways (I-93, I-89, I-95, US-4, NH-101, NH-16) and outlines of Lake Winnipesaukee, Squam, Winnisquam and Newfound, plus all lakes and ponds served." loading="lazy" width="500" height="660">
+      <div class="lakes-mapnote">Simplified illustration &middot; lake positions are approximate. Shaded blue = our service region (south of Squam Lake).</div>
+    </div>
+    <div class="lakes-legend">
+      <div class="lakes-legend-group">
+        <h3>Lakes Region &mdash; northern edge of our area</h3>
+        <ul class="lakes-list">
+          <li><span class="lake-num boundary">1</span> Squam Lake</li>
+          <li><span class="lake-num">2</span> Newfound Lake</li>
+          <li><span class="lake-num">3</span> Lake Winnipesaukee</li>
+          <li><span class="lake-num">4</span> Winnisquam Lake</li>
+        </ul>
+      </div>
+      <div class="lakes-legend-group">
+        <h3>Central New Hampshire</h3>
+        <ul class="lakes-list">
+          <li><span class="lake-num">5</span> Northwood Lake</li>
+          <li><span class="lake-num">6</span> Pleasant Lake</li>
+        </ul>
+      </div>
+      <div class="lakes-legend-group">
+        <h3>Southern New Hampshire ponds</h3>
+        <ul class="lakes-list">
+          <li><span class="lake-num">7</span> Angle Pond</li>
+          <li><span class="lake-num">8</span> Arlington Mill Reservoir</li>
+          <li><span class="lake-num">9</span> Big Island Pond</li>
+          <li><span class="lake-num">10</span> Canobie Lake</li>
+          <li><span class="lake-num">11</span> Cobbetts Pond</li>
+        </ul>
+      </div>
+      <div class="lakes-boundary-note">
+        <div class="bn-icon">&#128681;</div>
+        <p><strong>We serve south of Squam Lake.</strong> Squam is the northernmost lake in our service area &mdash; we do not service lakes north of Squam Lake.</p>
+      </div>
+      <p class="lakes-more">We also deliver to many additional southern New Hampshire lakes and ponds &mdash; <strong>just ask when you book</strong>. A few favorites: Country Pond (Kingston/Newton), Great Pond (Kingston), and Pawtuckaway Lake (Nottingham). Heads up: NH law does not permit jet skis on public waters under 75 acres, and some lakes carry local horsepower or PWC rules &mdash; we&apos;ll confirm your specific lake when you reserve.</p>
     </div>
   </div>
 </section>
@@ -551,7 +665,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
           <div class="req-item"><div class="req-dot"></div><div><strong>Age 21+</strong> &mdash; verified by photo ID at delivery</div></div>
           <div class="req-item"><div class="req-dot"></div><div><strong>NH Boating Safety Certificate</strong> &mdash; required for operators born Jan 1, 1975 or later</div></div>
           <div class="req-item"><div class="req-dot"></div><div><strong>Valid driver&apos;s license or government photo ID</strong></div></div>
-          <div class="req-item"><div class="req-dot"></div><div><strong>Signed rental agreement</strong> &mdash; <a href="https://www.dropbox.com/scl/fi/nvufm3pkckvwfkxyxmblr/NH-Jet-Fun-Rental-Agreement.pdf?rlkey=r2lowyue4zms5h842f7vj57h3&dl=1" target="_blank" rel="noopener noreferrer" style="color:var(--sky);">review it here</a>, sent digitally before delivery</div></div>
+          <div class="req-item"><div class="req-dot"></div><div><strong>Signed rental agreement</strong> &mdash; <a href="https://www.dropbox.com/scl/fi/nvufm3pkckvwfkxyxmblr/NH-Jet-Fun-Rental-Agreement.pdf?rlkey=r2lowyue4zms5h842f7vj57h3&dl=0" target="_blank" rel="noopener noreferrer" style="color:var(--sky);">review it here</a>, sent digitally before delivery</div></div>
           <div class="req-item"><div class="req-dot"></div><div><strong>15% reservation deposit</strong> paid at booking</div></div>
           <div class="req-item"><div class="req-dot"></div><div><strong>Balance + $900 security deposit</strong> paid at delivery</div></div>
           <div class="req-item"><div class="req-dot"></div><div><strong>NH delivery address</strong> &mdash; we deliver within NH only</div></div>
