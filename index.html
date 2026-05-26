@@ -328,7 +328,9 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   .fleet-grid,.about-inner,.contact-inner,.booking-inner,.delivery-inner,.lifestyle-inner,.pricing-grid,.lakes-inner{grid-template-columns:1fr;gap:1.8rem;}
   .steps{grid-template-columns:1fr 1fr;}.steps::before{display:none;}
   .price-card.featured{transform:none;}.faq-grid{grid-template-columns:1fr;}
-  .hero-stats{position:static;margin-top:2.5rem;}
+  #hero{flex-direction:column;justify-content:flex-start;align-items:stretch;min-height:auto;padding:104px 0 3rem;}
+  .hero-content{max-width:none;}
+  .hero-stats{position:static;margin-top:2.2rem;padding:0 8%;justify-content:flex-start;flex-wrap:wrap;gap:1.6rem 2rem;}
   .nav-toggle{display:flex;}
   .nav-mobile-actions{display:flex;}
   .nav-cta-mobile{display:inline-block;}
@@ -347,10 +349,10 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   section{padding:2.5rem 6%;}
   .hero-content{padding:0 6%;}
   .hero-title{font-size:clamp(2.6rem,12vw,3.5rem);}
-  .hero-stats{gap:1.4rem;}
+  .hero-stats{gap:1.2rem 1.6rem;padding:0 6%;flex-wrap:wrap;}
   .stat-num{font-size:1.9rem;}
-  .hero-actions{flex-direction:column;align-items:stretch;}
-  .btn-primary,.btn-ghost{justify-content:center;text-align:center;}
+  .hero-actions{flex-direction:row;flex-wrap:nowrap;gap:.55rem;}
+  .hero-actions a{flex:1;justify-content:center;text-align:center;padding:.8rem .45rem;font-size:.78rem;}
   .ski-specs{grid-template-columns:1fr;}
   #certificates{padding:3.5rem 6%;}
   .footer-links{flex-wrap:wrap;justify-content:center;gap:1rem;}
@@ -487,13 +489,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   <p style="margin-top:.9rem;font-size:.76rem;color:var(--muted);">* SK-01 is tow-sport ready with advance written approval. SK-02 is not equipped for towing.</p>
 </section>
 
-<section id="gallery">
-  <div class="gallery-strip">
-    <img src="/gtr230-beach-anchored.jpg" alt="Sea-Doo GTR 230 anchored on NH lake beach">
-    <img src="/hero-both-seadoos.jpg" alt="Both NH Jet Fun Sea-Doos on the water">
-    <img src="/sk2-rider.jpg" alt="Rider on Sea-Doo GTR 230 on NH lake">
-  </div>
-</section>
+<section id="gallery" style="display:none"><!-- Redundant photo strip removed: duplicated fleet images and rendered a broken empty cell on mobile. --></section>
 
 <section id="how">
   <div class="section-tag">The Process</div>
