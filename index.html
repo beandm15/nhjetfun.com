@@ -392,15 +392,20 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
 
 /* ===== Mobile home hero layout ===== */
 @media(max-width:600px){
-  #hero{min-height:90vh;justify-content:flex-start;align-items:stretch;padding:92px 0 0;position:relative;overflow:hidden;}
-  .hero-content{max-width:none;padding:0 6% 5.5rem;display:flex;flex-direction:column;flex:1;}
+  #hero{min-height:auto;padding:68px 0 0;display:block;position:relative;overflow:hidden;background:var(--navy);}
+  /* Mobile-only photo banner: full-width, un-zoomed, BOTH skis visible (sky/trees above, water below) */
+  .hero-bg{position:absolute;inset:auto;top:68px;left:0;right:0;height:80vw;background-image:url("/hero-2skis-mobile.jpg");background-size:cover;background-position:center;}
+  .hero-bg::after{inset:auto;top:68px;left:0;right:0;height:80vw;background:linear-gradient(180deg,rgba(10,22,40,.42) 0%,rgba(10,22,40,.04) 26%,rgba(10,22,40,0) 60%,rgba(10,22,40,.45) 88%,var(--navy) 100%);}
+  /* Headline overlaid on the trees, ABOVE the skis, two lines, left-justified */
+  .hero-content{position:relative;z-index:2;max-width:none;display:block;flex:none;padding:80vw 6% 0;}
   .hero-eyebrow{display:none;}
-  .hero-title{font-size:clamp(1.4rem,6vw,2.2rem);line-height:1;margin-bottom:1rem;white-space:nowrap;text-shadow:0 2px 14px rgba(0,0,0,.72);}
-  .hero-title em{display:inline;}
-  .hero-sub{font-size:.95rem;line-height:1.6;margin:auto 0 1.4rem;max-width:none;}
-  .hero-stats{position:absolute;left:0;right:0;bottom:0;margin:0;padding:1rem 6% 1.15rem;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:.4rem;background:linear-gradient(0deg,rgba(10,22,40,.9) 0%,rgba(10,22,40,.5) 70%,rgba(10,22,40,0) 100%);}
+  .hero-title{position:absolute;top:22px;left:6%;right:6%;margin:0;z-index:3;white-space:normal;font-size:clamp(1.4rem,6vw,2.2rem);line-height:1.08;text-shadow:0 2px 14px rgba(0,0,0,.72);}
+  .hero-title em{display:block;}
+  /* Lower text + buttons + stats sit directly BELOW the skis on the navy panel */
+  .hero-sub{margin:1.5rem 0 1.4rem;font-size:.98rem;line-height:1.6;max-width:none;}
+  .hero-stats{position:static;left:auto;right:auto;bottom:auto;margin:1.5rem 0 0;padding:0 6% 1.7rem;background:none;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:.4rem;}
   .hero-stats .stat{flex:1 1 0;min-width:0;}
-  .stat-num{font-size:1.5rem;}
+  .stat-num{font-size:1.6rem;}
   .stat-label{font-size:.56rem;letter-spacing:.05em;margin-top:.18rem;}
 }
 </style>
