@@ -155,13 +155,14 @@ section{scroll-margin-top:80px;}
 #hero{min-height:100vh;position:relative;display:flex;align-items:stretch;overflow:hidden;}
 .hero-bg{position:absolute;inset:0;z-index:0;background-image:url("/hero-2skis.jpg");background-size:cover;background-position:top center;filter:brightness(1.05) saturate(1.05);}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,40,.42) 0%,rgba(10,22,40,.12) 22%,rgba(10,22,40,0) 46%,rgba(10,22,40,.30) 72%,rgba(10,22,40,.62) 100%);}
-.hero-content{position:relative;z-index:2;padding:4.5rem 8% 5rem;max-width:710px;display:flex;flex-direction:column;animation:fadeUp .9s ease both;}
+.hero-content{position:relative;z-index:2;padding:4.5rem 8% 3.5rem;max-width:710px;display:flex;flex-direction:column;animation:fadeUp .9s ease both;}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:.6rem;color:var(--wave);font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.2rem;}
 .hero-eyebrow::before{content:"";display:block;width:26px;height:2px;background:var(--wave);}
 .hero-title{font-family:"Bebas Neue",sans-serif;font-size:clamp(2.8rem,5.2vw,4.6rem);line-height:.95;color:var(--white);letter-spacing:.02em;margin-bottom:1.2rem;text-shadow:0 2px 18px rgba(0,0,0,.6);}
 .hero-title em{font-style:normal;color:var(--wave);display:block;}
-.hero-sub{color:#fff;font-weight:700;font-size:1.03rem;line-height:1.65;margin:auto 0 2.3rem;max-width:490px;text-shadow:0 2px 14px rgba(0,0,0,.7);}
+.hero-sub{color:#fff;font-weight:700;font-size:1.03rem;line-height:1.65;margin:0 0 1.4rem;max-width:490px;text-shadow:0 2px 14px rgba(0,0,0,.7);}
+.hero-bottom{position:absolute;bottom:3.5rem;left:8%;max-width:520px;z-index:2;animation:fadeUp .9s .2s ease both;}
 .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;}
 .btn-primary{background:var(--sky);color:var(--white);padding:.88rem 1.9rem;border-radius:5px;text-decoration:none;font-weight:700;font-size:.92rem;letter-spacing:.03em;transition:all .25s;display:inline-flex;align-items:center;gap:.5rem;box-shadow:0 4px 20px rgba(45,125,210,.4);}
 .btn-primary:hover{background:var(--wave);color:var(--navy);transform:translateY(-2px);box-shadow:0 8px 28px rgba(77,182,232,.45);}
@@ -329,7 +330,8 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   .steps{grid-template-columns:1fr 1fr;}.steps::before{display:none;}
   .price-card.featured{transform:none;}.faq-grid{grid-template-columns:1fr;}
   #hero{flex-direction:column;justify-content:flex-start;align-items:stretch;min-height:auto;padding:104px 0 3rem;}
-  .hero-content{max-width:none;}
+  .hero-content{max-width:none;padding-bottom:0;}
+  .hero-bottom{position:static;left:auto;bottom:auto;max-width:none;padding:0 8%;margin-top:1.5rem;}
   .hero-stats{position:static;margin-top:2.2rem;padding:0 8%;justify-content:flex-start;flex-wrap:wrap;gap:1.6rem 2rem;}
   .nav-toggle{display:flex;}
   .nav-mobile-actions{display:flex;}
@@ -402,6 +404,7 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   .hero-title{position:absolute;top:22px;left:6%;right:6%;margin:0;z-index:3;white-space:normal;font-size:clamp(1.4rem,6vw,2.2rem);line-height:1.08;text-shadow:0 2px 14px rgba(0,0,0,.72);}
   .hero-title em{display:block;}
   /* Lower text + buttons + stats sit directly BELOW the skis on the navy panel */
+  .hero-bottom{position:static;left:auto;bottom:auto;max-width:none;padding:0 6%;margin-top:0;}
   .hero-sub{margin:1.5rem 0 1.4rem;font-size:.98rem;line-height:1.6;max-width:none;}
   .hero-stats{position:static;left:auto;right:auto;bottom:auto;margin:1.5rem 0 0;padding:0 6% 1.7rem;background:none;display:flex;flex-wrap:nowrap;justify-content:space-between;gap:.4rem;}
   .hero-stats .stat{flex:1 1 0;min-width:0;}
@@ -433,6 +436,8 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   <div class="hero-bg"></div>
   <div class="hero-content">
     <h1 class="hero-title">Ride the <em>Open Water</em></h1>
+  </div>
+  <div class="hero-bottom">
     <p class="hero-sub">Premium Sea-Doo Jet Skis. Weekly rentals delivered to your NH lake or pond &mdash; every Saturday.</p>
     <div class="hero-actions">
       <a href="https://bookings.nhjetfun.com" target="_blank" class="btn-primary">&#128197; Check Availability &amp; Book</a>
@@ -518,6 +523,19 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
     <div class="step"><div class="step-num">2</div><div class="step-title">We Meet You</div><div class="step-desc">We meet you at your lake or pond boat launch on Saturday at 5:00 PM or earlier by arrangement. We train you on ski operations, provide life jackets, and launch it for you. Then your fun begins!</div></div>
     <div class="step"><div class="step-num">3</div><div class="step-title">Ride All Week</div><div class="step-desc">Seven full days on with your ski on the water. No hourly clock ticking in the background... Just fun in the sun with your own personal watercraft!</div></div>
     <div class="step"><div class="step-num">4</div><div class="step-title">We Pick Up</div><div class="step-desc">We meet you back at the boat launch the next Saturday at 10:00 AM. You don&apos;t have to worry about anything else; we will load the trailer and take the ski. Your security deposit returned within 5 business days.</div></div>
+  </div>
+</section>
+
+<section id="lifestyle">
+  <div class="lifestyle-inner">
+    <div class="lifestyle-img"><img src="/gtr230-beach-anchored.jpg" alt="GTR 230 anchored on New Hampshire lake beach"></div>
+    <div class="lifestyle-text">
+      <div class="section-tag">New Hampshire Lakes</div>
+      <h2 class="section-title">Your Lake.<br>Your Schedule.</h2>
+      <p>From the open expanse of Lake Winnipesaukee to the quiet coves of Squam and Newfound &mdash; wherever you ride in New Hampshire, we&apos;ll meet you at the launch ramp with the Craft.</p>
+      <p>No tow vehicle. No trailer logistics. No figuring out how to launch. Just tell us your lake and your week.</p>
+      <div style="margin-top:1.8rem;"><a href="https://bookings.nhjetfun.com" target="_blank" class="btn-primary">Book Your Week &rarr;</a></div>
+    </div>
   </div>
 </section>
 
@@ -671,20 +689,6 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
   </div>
 </section>
 
-<section id="lifestyle">
-  <div class="lifestyle-inner">
-    <div class="lifestyle-img"><img src="/gtr230-beach-anchored.jpg" alt="GTR 230 anchored on New Hampshire lake beach"></div>
-    <div class="lifestyle-text">
-      <div class="section-tag">New Hampshire Lakes</div>
-      <h2 class="section-title">Your Lake.<br>Your Schedule.</h2>
-      <p>From the open expanse of Lake Winnipesaukee to the quiet coves of Squam and Newfound &mdash; wherever you ride in New Hampshire, we&apos;ll meet you at the launch ramp with the Craft.</p>
-      <p>No tow vehicle. No trailer logistics. No figuring out how to launch. Just tell us your lake and your week.</p>
-      <div style="margin-top:1.8rem;"><a href="https://bookings.nhjetfun.com" target="_blank" class="btn-primary">Book Your Week &rarr;</a></div>
-    </div>
-  </div>
-</section>
-
-
 <section id="certificates">
   <div class="cert-intro">
     <div class="section-tag">Boating Safety Certificate</div>
@@ -792,9 +796,8 @@ footer{background:rgba(245,237,224,.95);padding:2rem 8%;display:flex;align-items
       <div class="about-text">
         <p>NH Jet Fun is a small, owner-operated business based in Hampstead, New Hampshire. We started renting because we love this state&apos;s lakes &mdash; and we wanted to make that experience available to more people without the expense of ownership.</p>
         <p>We personally maintain both craft, meet you at the launch ramp, and are reachable throughout your rental if anything comes up. This isn&apos;t a faceless fleet &mdash; it&apos;s two machines we care about, rented to people who&apos;ll treat them with respect.</p>
-        <p>We operate under Veralase LLC, a registered New Hampshire LLC. All rentals are backed by a comprehensive agreement governed by NH law, and we carry insurance on both craft.</p>
+        <p>All rentals are backed by a comprehensive agreement governed by NH law, and we carry insurance on both craft.</p>
       </div>
-      <img src="/owner-jeep-trailer.jpg" alt="NH Jet Fun owner with a Sea-Doo on its trailer, ready for lakeside delivery" style="width:100%;height:auto;display:block;margin-top:1.8rem;border-radius:16px;box-shadow:0 12px 50px rgba(10,22,40,.14);">
     </div>
     <div>
       <div class="req-box">
